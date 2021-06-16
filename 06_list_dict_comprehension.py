@@ -72,7 +72,7 @@ sort(filing_cabinet, 3)
 sort(filing_cabinet, 6)
 print(filing_cabinet)
 
-# ex chap 6 : create dictionary, keys (0->20), values(the power of 2 on the key)
+# ex chap 6 : create dictionary, keys (0->20), values(key to the power of 2)
 print('\nex chap 6:\n-----------------------')
 
 nbrs = [i**2 for i in range(21)]
