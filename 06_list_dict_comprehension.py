@@ -79,3 +79,9 @@ nbrs = [i**2 for i in range(21)]
 dict_power = {k:v for k, v in enumerate(nbrs)}
 print(dict_power)
 
+# ex 6 correction
+print('\nex chap 6 (correction):\n-----------------------')
+
+# str(k) if you want a string in key and not a number
+dict_power_2 = { str(k):k**2 for k in range(0, 21)}
+print(dict_power_2)

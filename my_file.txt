@@ -1,0 +1,10 @@
+0 to the power of 2 = 0
+1 to the power of 2 = 1
+2 to the power of 2 = 4
+3 to the power of 2 = 9
+4 to the power of 2 = 16
+5 to the power of 2 = 25
+6 to the power of 2 = 36
+7 to the power of 2 = 49
+8 to the power of 2 = 64
+9 to the power of 2 = 81
