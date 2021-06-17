@@ -10,7 +10,7 @@ list_1 = []
 for i in range(10):
 	list_1.append(i**2) # to the power of 2
 
-# list comprehension
+# list comprehension (0->9)
 list_2 = [i**2 for i in range(10)]
 
 # nested list
