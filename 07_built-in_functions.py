@@ -61,7 +61,7 @@ print(f'x = {x}')
 
 # open a file with such name (file created if it doesn't exist)
 # w -> write, r -> read, a -> write on the end (add), other modes exist... 
-f = open('my_file.txt', 'w')
+f = open('txt/my_file.txt', 'w')
 
 # write in a file
 f.write('Hello World !')
@@ -70,25 +70,25 @@ f.write('Hello World !')
 f.close()
 
 # open a file to read
-f = open('my_file.txt', 'r')
+f = open('txt/my_file.txt', 'r')
 
 # read the file
 print(f.read())
 f.close()
 
 # conventional way ("close()"" isn't needed with "with" operator)
-with open('my_file.txt', 'w') as f:
+with open('txt/my_file.txt', 'w') as f:
 	# write numbers (0->9) with their power of 2 on severals different lines
 	for i in range(10):
 		f.write(f'{i} to the power of 2 = {i**2}\n')
 		
 """
-exercice
+txt/my_file.txtexercice
 ----------------"""
 
 # make in a list with each line of the last created file
 print('\nex with readline()\n------------------------')
-with open('my_file.txt', 'r') as f:
+with open('txt/my_file.txt', 'r') as f:
 	# write numbers (0->9) with their power of 2 on severals different lines
 	list_1 = f.readlines()
 	print(list_1)
@@ -99,7 +99,7 @@ print('\nex with readline() and remove the carriage return with regex\n'
 
 import re
 
-with open('my_file.txt', 'r') as f:
+with open('txt/my_file.txt', 'r') as f:
 	# write numbers (0->9) with their power of 2 on severals different lines
 	list_1 = []
 
@@ -114,7 +114,7 @@ print(list_1)
 print('\nex with read() and remove the carriage return with regex\n'
 	'-----------------------------------------------------------------')
 
-with open('my_file.txt', 'r') as f:
+with open('txt/my_file.txt', 'r') as f:
 	list_1 = []
 	for line in re.findall('.*\\n', f.read()):
 		list_1.append(re.sub('\\n$','',line))
