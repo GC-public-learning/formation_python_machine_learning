@@ -38,7 +38,7 @@ for file in filenames:
 """
 ex
 ----------------"""
-# record the content of each .py file from the directory in a file.txt
+# record the content of each py file from the directory in a file.txt
 filenames = glob.glob('*.py')
 
 for file in filenames:
