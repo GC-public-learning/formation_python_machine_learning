@@ -85,8 +85,8 @@ with open('txt/my_file.txt', 'w') as f:
 """
 ex
 ----------------"""
+# make a list with each line of the last created file
 
-# make in a list with each line of the last created file
 print('\nex with readline()\n------------------------')
 with open('txt/my_file.txt', 'r') as f:
 	# write numbers (0->9) with their power of 2 on severals different lines
@@ -125,8 +125,7 @@ with open('txt/my_file.txt', 'r') as f:
 
 # .splitlines() : ignore the carriage return in the strings !
 print('\nCorrection\n------------------------')
-with open('txt/my_file.txt', 'r') as f:
-	
+with open('txt/my_file.txt', 'r') as f:	
 	list_1 = f.read().splitlines()
 	print(list_1)
 

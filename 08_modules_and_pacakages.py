@@ -45,3 +45,15 @@ for file in filenames:
 	with open(file, 'r') as f:
 		with open(f'records/{f.name}.txt', 'w') as txt:
 			txt.write(f.read())
+
+
+"""
+correction
+--------------------"""
+# record each file in a dictionnary wich each key is a file name
+filenames = glob.glob('*.py')
+d = {}
+for file in filenames:
+	with open(file, 'r') as f:
+		d[file] = f.read().splitlines()
+print(d)
